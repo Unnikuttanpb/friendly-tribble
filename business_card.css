@@ -54,21 +54,24 @@ nav {
     overflow: hidden;
     text-overflow: ellipsis;
 }
- h5{
+
+h5 {
     font-size: 17px;
- }
+}
+
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
     display: flex;
     padding: 5px;
     border-bottom: 1px solid gray;
 }
+
 @media screen and (min-width: 993px) {
 
     .dropdown:hover .dropdown-menu {
@@ -79,7 +82,7 @@ a{
         display: flex;
     }
 
- 
+
 
 }
 
@@ -99,4 +102,53 @@ a{
         font-size: 14px;
     }
 
+}
+
+.card {
+    border: none;
+}
+
+.right-price-chart {
+    text-align: center;
+}
+
+.inner-uper-div {
+    width: 100%;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    color: #FFFFFF;
+}
+
+.right-price-chart .qty-left-div {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.right-price-chart .qty-center-div {
+    width: 33.3%;
+    text-align: center;
+    float: left;
+}
+
+.right-price-chart .qty-right-div {
+    width: 33.3%;
+    text-align: center;
+    float: right;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    outline: none;
+    border: 1px solid black;
+}
+
+.dropdown-item {
+    text-decoration: none;
+    display: flex;
+    padding: 10px !important;
+    border-bottom: 1px solid gray !important;
 }

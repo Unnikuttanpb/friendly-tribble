@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+    <g data-name="Group 11439" transform="translate(-457 -14)">
+        <circle data-name="Ellipse 657" cx="14" cy="14" r="14" transform="translate(457 14)" style="fill:#0096a9"/>
+        <g data-name="Search Icon">
+            <g data-name="Ellipse 613" style="stroke:#fff;stroke-width:1.5px;fill:none" transform="translate(463 20)">
+                <circle cx="7" cy="7" r="7" style="stroke:none"/>
+                <circle cx="7" cy="7" r="6.25" style="fill:none"/>
+            </g>
+            <path data-name="Line 720" transform="translate(475 32)" style="stroke-linecap:round;stroke:#fff;stroke-width:1.5px;fill:none" d="m0 0 4 4"/>
+        </g>
+    </g>
+</svg>

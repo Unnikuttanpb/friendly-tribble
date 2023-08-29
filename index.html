@@ -1,283 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just for Print</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Just For Print</title>
 </head>
 
 <body>
-    <section id="header">
-        <a href=""><img style="mix-blend-mode: darken;" src="pictures/print.jpg" alt="" class="logo" width="150px" height=""></a>
-        <div>
-            <ul id="navbar"> 
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a id="bag" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <a href="" id="close"><i class="fa-solid fa-arrow-right"></i></a>
-            </ul>
-        </div>
-        <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
 
-        </div>
-    </section>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <a class="navbar-brand mx-5 border-0" href="index.html"><img src="img/print.jpg" alt="" width="130"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-left">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              All Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul>
+                <li><a class="dropdown-item" href="business_card.html">Business Cards</a></li>
+                <li><a class="dropdown-item" href="#">Brochure Printing</a></li>
+                <li><a class="dropdown-item" href="#">Pen Drive Printing</a></li>
+                <li><a class="dropdown-item" href="#">Poster Printing</a></li>
+              </ul>
+              <ul>
+                <li><a class="dropdown-item" href="#">Letterheads</a></li>
+                <li><a class="dropdown-item" href="#">Booklet Printing</a></li>
+                <li><a class="dropdown-item" href="#">Plastic Card Printing</a></li>
+                <li><a class="dropdown-item" href="#">Balloon Printing</a></li>
+              </ul>
+              <ul>
+                <li><a class="dropdown-item" href="#">Envelopes</a></li>
+                <li><a class="dropdown-item" href="#">Flyer Printing</a></li>
+                <li><a class="dropdown-item" href="#">Rollup Banner Printing</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="business_card.html">Business Cards</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Flyers / Leaflets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Letterheads</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Brochures</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/flyer.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/roll-up banner.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/SPRING.jfif" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <section class="p-4 row justify-content-center">
+    <div class="row">
+      <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+        <div class="border p-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/3159/3159310.png" class="mb-2" width="30" alt="">
+          <br>
+          <span class="d-block font-size-sm">Free Custom Design</span>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="pictures/SPRING.jfif" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-    <section id="features" class="section-p1 ">
-        <div class="feature-box">
-            <img src="img/features/f1.png" alt="" width="">
-            <h6>Free Shipping</h6>
+      <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+        <div class="border p-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/411/411763.png" class="mb-2" width="30" alt="">
+          <br>
+          <span class="d-block font-size-sm">Free Shipping</span>
         </div>
-        <div class="feature-box">
-            <img src="img/features/f2.png" alt="" width="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="feature-box">
-            <img src="img/features/f3.png" alt="" width="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="feature-box">
-            <img src="img/features/f4.png" alt="" width="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="feature-box">
-            <img src="img/features/f5.png" alt="" width="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="feature-box">
-            <img src="img/features/f6.png" alt="" width="">
-            <h6>Free Shipping</h6>
-        </div>
-    </section>
-    
+      </div>
 
-    <!-- Featured products -->
-
-    <section id="product-1" class="section-p1 ">
-        <h2>Our Products</h2>
-        <!-- <p>Summer Collection New Modern Design</p> -->
-        <div class="container">
-            <div class="small-container">
-                <img src="pictures/a4.jpg" alt="">
-                <div class="des">
-                    <span>Note-Book</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="small-container">
-                <img src="pictures/a5.jpg" alt="">
-                <div class="des">
-                    <span>Flyers</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="small-container">
-                <img src="pictures/c5.jpg" alt="">
-                <div class="des">
-                    <span>Envelope</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="small-container">
-                <img src="pictures/c6.jpg" alt="">
-                <div class="des">
-                    <span>Magazine</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="small-container">
-                <img src="pictures/c7.jpg" alt="">
-                <div class="des">
-                    <span>Notepad</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="small-container">
-                <img src="pictures/dl.jpg" alt="">
-                <div class="des">
-                    <span>Compliment Slips</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="small-container">
-                <img src="pictures/8.jpg" alt="">
-                <div class="des">
-                    <span>Note-pad</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="small-container">
-                <img src="pictures/wrapping.jpg" alt="">
-                <div class="des">
-                    <span>Wrapping Paper</span>
-                    <!-- <h5>Cartoon Astronanut T-Shirt</h5> -->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$50.00</h4>
-                </div>
-                <a href=""><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
+      <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+        <div class="border p-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/7284/7284421.png" class="mb-2" width="30" alt="">
+          <br>
+          <span class="d-block font-size-sm"> 10000+ Happy Customers</span>
         </div>
-    </section>
+      </div>
 
-    <section id="banner" class="section-m1">
-        <h4>Services</h4>
-        <h2>Upto <span>70% off</span>-All the Products</h2>
-        <button class="btn">Explore me</button>
-    </section>
-
- <footer class="section-p1" class="section-m1">
-        <div class="col">
-            <img style="mix-blend-mode: darken;" class="logo" src="pictures/print.jpg" alt="" width="150px">
-            <h4>Contact</h4>
-            <p><strong>Address:</strong>999 Happytown , street 369, London UK</p>
-            <p><strong>Phone:</strong>0481 24465854 / 6238744699</p>
-            <p><strong>Hours:</strong>24hr Mon-Sun</p>
-            <div class="follow">
-                <h4>follow Us</h4>
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                </div>
-            </div>
+      <div class="col-12 col-md-3 text-center">
+        <div class="border p-3">
+          <img src="https://cdn-icons-png.flaticon.com/512/2838/2838810.png" class="mb-2" width="30" alt="">
+          <br>
+          <span class="d-block font-size-sm">Always Personal Help</span>
         </div>
-        <div class="col">
-            <h4>About</h4>
-            <a href="">About Us</a>
-            <a href="">Delivery Information</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Term's & Conditions</a>
-            <a href="">Contact Us</a>
-        </div>
-        <div class="col">
-            <h4>My Contact</h4>
-            <a href="">Sign In</a>
-            <a href="">View Cart</a>
-            <a href="">My Wishlist</a>
-            <a href="">Track My Order</a>
-            <a href="">Help</a>
-        </div>
-        <div class="install">
-            <h4>Intall App</h4>
-            <p>From App Store or Google Sore</p>
-            <div class="col-12">
-                <img class="border" src="img/pay/app.jpg" alt="" width="">
-                <img class="border"  src="img/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways</p>
-            <img src="img/pay/pay.png" alt="">
-        </div>
-
-
-    </footer>
-    <div class="copy-right">
-        <p>Copy-right@Just For Print 2022-2023</p>
+      </div>
     </div>
+  </section>
 
+  <div class="container my-5">
+    <div class="text-center">
+      <h3 class="fw-bold">Our Top-Selling Categories</h3>
+      <div class="row my-5">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/business cards.png" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">Premium Business Card</h5>
+              <p class="text-dark fw-bold">Starting From £13.65</p>
+              <div class="my-1 paragraph-length text-sm">Premium business card is available matt, gloss or soft-touch
+                finish a standard corner</div>
+              <a href="business_card.html" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/flyers.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">A4 Leaflet</h5>
+              <p class="text-dark fw-bold">Starting From £20.60</p>
+              <div class="my-1 paragraph-length text-sm">Most economical option <br>
+                Durable and high-quality <br>
+                Quantities from 25 pieces <br></div>
+              <a href="#" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/pendrive.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">Twister USB Drive</h5>
+              <p class="text-dark fw-bold">Starting From £282.50</p>
+              <div class="my-1 paragraph-length text-sm"> Experience the perfect union of technology and aesthetics with
+                the Twister Pen Drive!</div>
+              <a href="#" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/A4 letterhead.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">A4 Letterheads</h5>
+              <p class="text-dark fw-bold">Starting From £23.00</p>
+              <div class="my-1 paragraph-length text-sm">Professional designs from our designer well suited for your
+                organization</div>
+              <a href="#" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/A4 Staple Booklets, Self Cover.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">A4 Staple Booklets, Self Cover</h5>
+              <p class="text-dark fw-bold">Starting From £72.45</p>
+              <div class="my-1 paragraph-length text-sm">Lamination on cover for extra protection<br>Glossy or matte
+                interior page options</div>
+              <a href="#" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/banners.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">Standard Roll-up Banners</h5>
+              <p class="text-dark fw-bold">Starting From £34.99</p>
+              <div class="my-1 paragraph-length text-sm">Strong aluminium base <br>
+                High-quality printing <br>
+                Fast delivery available</div>
+              <a href="#" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/poster.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">A1 Poster</h5>
+              <p class="text-dark fw-bold">Starting From £64.05</p>
+              <div class="my-1 paragraph-length text-sm">Most popular poster choice<br>Pick gloss, bond or light box
+              </div>
+              <a href="#" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-4 col-12">
+          <div class="card">
+            <img src="img/c5.jpg" class="card-img-top" alt="...">
+            <div class="card-body text-start">
+              <h5 class="card-title fw-bold text-primary">C5 Printed Envelopes</h5>
+              <p class="text-dark fw-bold">Starting From £39.20</p>
+              <div class="my-1 paragraph-length text-sm">Envelopes for your direct-mail, sales letters and greeting
+                cards<br> Free delivery, no hidden costs</div>
+              <a href="#" class="btn btn-primary fw-bold">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <footer class="pb-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img style="mix-blend-mode: darken;" class="logo" src="img/print.jpg" alt="" width="100px"><br><br>
+          <p><strong>Address :</strong><br>128 City Road, London,<br>
+            United Kingdom,
+            EC1V 2NX</p>
+          <a href="tel:+4402038322733" class="text-dark text-decoration-none border-0">
+            <img src="https://cdn-icons-png.flaticon.com/512/126/126509.png" class="" width="20" alt="">
+            <span style="margin-left:8px;"> 020 3832 2733</span>
+          </a>
+          <a href="https://wa.me/4402038322733?text=Hello" class="text-dark text-decoration-none border-0">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384055.png" class="" width="20" alt="">
+            <span style="margin-left:8px;"> 020 3832 2733</span>
+          </a>
+        </div> 
+        <div class="col-md-3">
+          <a href="">Business Cards</a>
+          <a href="">Letterheads</a>
+          <a href="">Flyer Printing</a>
+          <a href="">Booklet Printing</a>
+        </div>
+        <div class="col-md-3">
+          <a href="">Envelope Printing</a>
+          <a href="">Poster Printing</a>
+          <a href="">Balloon Printing</a>
+          <a href="">Pen Drive Printing</a>
+        </div>
+        <div class="col-md-3">
+          <p>Secured Payment Gateways</p>
+          <img src="img/paypal.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="text-center py-3 bg-primary text-white pb-1">
+    <p>Copy-right@Just For Print 2022-2023</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
